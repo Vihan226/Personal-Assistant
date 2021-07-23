@@ -37,7 +37,7 @@ function read(text){
         speech.text= 'you can call me by any name' 
     }
  
-    if(text.includes('thank')){
+    if(text.includes('thank you')){
         speech.text= 'you are welcome' 
     }
 
@@ -45,11 +45,11 @@ function read(text){
         speech.text= 'its a very delicious food' 
     }
 
-    if(text.includes('some ideas of making food')||text.includes('what food should I make')||text.includes('what food should I create')||text.includes('what food should I prepare')){
+    if(text.includes('making food')||text.includes('what food should I make')||text.includes('what food should I create')||text.includes('what food should I prepare')){
         speech.text= 'You can eat salad, chicken, soup, ice cream, sandwhich or even an egg' 
     }
 
-    if(text.includes('best places to eat in Kalahari')||text.includes('best places to eat at the Kalahari')){
+    if(text.includes('eat in Kalahari')||text.includes('best places to eat at the Kalahari')){
         speech.text= 'The best places to eat at the Kalahari is Sortino’s Italian Kitchen,the last bite, blux grill and bar or the pizza pub' 
     }
 
@@ -65,8 +65,46 @@ function read(text){
     if(text.includes('Unity')){
         speech.text= 'You can get started by using their already made game such as the car game or the fps game to get started with unity. Or you can watch some tutorial on youtube' 
     }
+    
+    if(text.includes('can you play')){
+        speech.text= 'yes I can, complete the dash, jingle bells jingle on the dash' 
+    }
+
+    if(text.includes('way')){
+        speech.text= 'You got it! Awesome! Now you can say I want to have a memory competition for a very chellanging competition!' 
+    }
+    if(text.includes('I want to have a memory competition')){
+        speech.text= 'Now you are getting starter for the memory competition. Make sure you say number by number such as two four nine. OK, all set. Repeat this. 2' 
+    }
+    if(text.includes('2')){
+        speech.text= 'You got it. Easy Enough right. Now repeat this. 278' 
+    }
+
+    if(text.includes('278')){
+        speech.text= 'You got it. Easy Enough right. Now repeat this. 45678' 
+    }
+
+    if(text.includes('4 5 6 7 8')){
+        speech.text= 'Well Done! Now repeat this. 640842' 
+    }
+
+    if(text.includes('640 842')){
+        speech.text= 'Very Impressive! Can you repeat this. 78422156' 
+    }
+
+    if(text.includes('78422 156')){
+        speech.text= 'Amazing. Make sure you get this right to prove you are the real one at memory and focus. Repeat this. 45826784' 
+    }
+
+    if(text.includes('4582 6784')){
+        speech.text= 'You have finished all the levels. You are pro at remembering things! Amazing job!' 
+    }
+    if(text.includes('most richest person in the world')){
+        speech.text= 'The most richest person in the world is Jeff Bezos! He is the CEO of Amazon! ' 
+    }
 
 
+ 
     
     window.speechSynthesis.speak(speech)
 }
