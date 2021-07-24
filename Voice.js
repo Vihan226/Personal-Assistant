@@ -32,7 +32,7 @@ function read(text){
     if(text.includes('how are you')|| text.includes('how is it been')){
        speech.text = 'I am good, how are you. Welcome to you own personal assistant'
     }
-    if(text.includes('Hello')|| text.includes('hello')){
+    if(text.includes('Hello')|| text.includes('hello')||text.includes('Hi')|| text.includes('hi')){
         speech.text = 'Welcome to your own personal assistant, where you can talk to me as your own worker. You can start by saying How are you or maybe what is the date'
      }
 
@@ -40,7 +40,7 @@ function read(text){
         speech.text= 'you can call me by any name' 
     }
  
-    if(text.includes('thank you')){
+    if(text.includes('thank you')||text.includes('thanks')){
         speech.text= 'you are welcome' 
     }
 
@@ -123,7 +123,7 @@ function read(text){
     }
 
     if(text.includes('robot dog')|| text.includes('robot dogs') ){
-        speech.text= 'The best robot dog is sony aibo. Yes it is a little bit expensive but it is very cool. If you want something cool but in your price rate, you can buy the robot jennie dog. It costs 449 dollars. Jennie robot dog does everthing besides walking. Its also a lebrador puppy style dog. Its cool right!' 
+        speech.text= 'The best robot dog is sony aibo. Yes it is a little bit expensive but it is very cool. If you want something cool but in your price rate, you can buy the robot jennie dog. It costs 449 dollars.' 
     }
     
 
