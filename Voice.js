@@ -19,15 +19,7 @@ function read(text){
 
     var speech= new SpeechSynthesisUtterance();
     speech.text = text 
-    if(text.includes('time')){
-        speech.text = 'It is ' + new Date().getHours()+" "+new Date().getMinutes()+" right now"
-    }
-    else if(text.includes('my birthday'))
-    speech.text= ' How would I know'
-
-    if(text.includes('date')){
-        speech.text= 'It is' + new Date()
-    }
+ 
 
     // greetings
     if(text.includes('how are you')|| text.includes('how is it been')){
@@ -127,6 +119,16 @@ function read(text){
         speech.text= 'The best robot dog is sony aibo. Yes it is a little bit expensive but it is very cool. If you want something cool but in your price rate, you can buy the robot jennie dog. It costs 449 dollars.' 
     }
 
+    if(text.includes('where')&& text.includes('World Cup trophy') ){
+        speech.text= 'The Fifa World Cup trophy is located at Zurich in Switzerlands museum.' 
+    }
+
+
+    
+
+
+     // all commands that the assistant help doing on the computer
+
     
     if(text.includes('Cristiano Ronaldo') ){
         speech.text= 'Cristiano Ronaldo is one of the best soccer players in the world. For more information about his soccer history you can visit this site.' 
@@ -137,7 +139,8 @@ function read(text){
         speech.text= 'Lionel Messi is one of the best soccer players in the world. For more information about his soccer history you can visit this site.' 
         window.open('https://www.bing.com/search?FORM=HJ2CDF&PC=HJ2C&q=lionel+messi+soccer+history')
     }
-    // all open commands
+
+
     if(text.includes('weather')){
        speech.text='opening the weather forecast for today for you'
         window.open('https://www.bing.com/search?q=weather+forecast&qs=WA&pq=weather+for&sc=6-11&cvid=793C4E59090541FD9844DA27E3E5FE96&FORM=QBRE&sp=1')
@@ -190,6 +193,27 @@ function read(text){
         speech.text='opening github for you'
          window.open('https://www.github.com/')
      }
+     if(text.includes('Translate')||text.includes('Translation')||text.includes('translate')||text.includes('translation')){
+        speech.text='opening google translate to translate languages for you'
+         window.open('https://translate.google.com/')
+     }
+
+     if(text.includes('time')){
+        speech.text = 'It is ' + new Date().getHours()+" "+new Date().getMinutes()+" right now"
+    }
+    else if(text.includes('my birthday'))
+    speech.text= ' How would I know'
+
+    if(text.includes('date')){
+        speech.text= 'It is' + new Date()
+    }
+
+    if(text.includes('cooking')|| text.includes('cook')){
+        speech.text='opening all the cooking recipes for you'
+         window.open('https://www.allrecipes.com/recipes/')
+     }
+     
+    
      
     
     
