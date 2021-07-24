@@ -212,6 +212,12 @@ function read(text){
         speech.text='opening all the cooking recipes for you'
          window.open('https://www.allrecipes.com/recipes/')
      }
+
+     if(text.includes('Facebook')){
+        speech.text='opening facebook for you'
+         window.open('https://www.facebook.com/')
+     }
+
      
     
      
