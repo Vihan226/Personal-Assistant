@@ -16,6 +16,7 @@ read(text)
 }
 
 function read(text){
+
     var speech= new SpeechSynthesisUtterance();
     speech.text = text 
     if(text.includes('time')){
@@ -37,7 +38,7 @@ function read(text){
      }
 
     if(text.includes('what is your name')){
-        speech.text= 'you can call me by any name' 
+        speech.text= 'you can call me by any name.' 
     }
  
     if(text.includes('thank you')||text.includes('thanks')){
@@ -166,19 +167,30 @@ function read(text){
          window.open('https://www.yahoo.com/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuYmluZy5jb20v&guce_referrer_sig=AQAAAGqbcm21KIFFmyPZWHHUWJKV2RH3WPEhk-oRG_wx62UH17AI4fh55K5szrwcxAQJHt100XKsaNod62nO52Eb72RNk6gMSHubfCUl_-6vnlwgqhXpnhRxlTSmwtmLRBlMgirIh_RmR5vzDiuTqsImVKP0aSFmWfbj-jG51w2VgAS6')
      }
      if(text.includes('Dropbox')){
-        speech.text='opening dropbox for you for you'
+        speech.text='opening dropbox for you.'
          window.open(' https://www.dropbox.com/?_hp=c&landing=dbv2')
      }
 
      if(text.includes('Punjabi')&& ('songs')){
-        speech.text='opening the best punjabi songs'
+        speech.text='opening the best punjabi songs fro you'
          window.open(' https://www.youtube.com/results?search_query=karan+aujla+songs')
      }
 
      if(text.includes('coding')&& ('learn')){
-        speech.text='opening the best link to learn coding'
-         window.open(' https://code.byjusfutureschool.com')
+        speech.text='opening the best link to learn coding fro you'
+         window.open('https://www.w3schools.com/')
      }
+
+     if(text.includes('Hindi TV shows')&& ('watch')||text.includes('Hindi TV show')&& ('watch')||text.includes('Hindi TV shows')&& ('see')||text.includes('Hindi TV show')&& ('see')){
+        speech.text='opening a link to hindi tv shows just for you'
+         window.open('https://desiserials.info/')
+     }
+
+     if(text.includes('GitHub')){
+        speech.text='opening github for you'
+         window.open('https://www.github.com/')
+     }
+     
     
     
 
