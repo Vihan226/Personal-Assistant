@@ -33,7 +33,7 @@ function read(text){
        speech.text = 'I am good, how are you. Welcome to you own personal assistant'
     }
     if(text.includes('Hello')|| text.includes('hello')||text.includes('Hi')|| text.includes('hi')){
-        speech.text = 'Welcome to your own personal assistant, where you can talk to me as your own worker. You can start by saying How are you or maybe what is the date'
+        speech.text = 'Welcome to your own personal assistant, where you can talk to me as your own worker. You can also say open some site such as youtube. You can start by saying How are you or maybe what is the date'
      }
 
     if(text.includes('what is your name')){
@@ -65,7 +65,7 @@ function read(text){
         speech.text= 'The best games are fortnite, minecraft, call of duty but my personal favorite is fifa' 
     }
 
-    if(text.includes('unity')||text.includes('Unity')){
+    if(text.includes('how to use Unity')||text.includes('How to get started on Unity')){
         speech.text= 'You can get started by using their already made game such as the car game or the fps game to get started with unity. Or you can watch some tutorial on youtube' 
     }
     
@@ -125,9 +125,64 @@ function read(text){
     if(text.includes('robot dog')|| text.includes('robot dogs') ){
         speech.text= 'The best robot dog is sony aibo. Yes it is a little bit expensive but it is very cool. If you want something cool but in your price rate, you can buy the robot jennie dog. It costs 449 dollars.' 
     }
+
+    
+    if(text.includes('Cristiano Ronaldo') ){
+        speech.text= 'Cristiano Ronaldo is one of the best soccer players in the world. For more information about his soccer history you can visit this site.' 
+        window.open('https://www.bing.com/search?FORM=HJ2CDF&PC=HJ2C&q=cristiano+ronaldo+soccer+history')
+    }
+
+    if(text.includes('Lionel Messi') ){
+        speech.text= 'Lionel Messi is one of the best soccer players in the world. For more information about his soccer history you can visit this site.' 
+        window.open('https://www.bing.com/search?FORM=HJ2CDF&PC=HJ2C&q=lionel+messi+soccer+history')
+    }
+    // all open commands
+    if(text.includes('weather')){
+       speech.text='opening the weather forecast for today for you'
+        window.open('https://www.bing.com/search?q=weather+forecast&qs=WA&pq=weather+for&sc=6-11&cvid=793C4E59090541FD9844DA27E3E5FE96&FORM=QBRE&sp=1')
+    }
+
+    if(text.includes('YouTube')){
+        speech.text='opening youtube for you'
+         window.open('https://www.youtube.com/')
+     }
+
+     if(text.includes('YouTube')){
+        speech.text='opening youtube for you'
+         window.open('https://www.youtube.com/')
+     }
+
+     if(text.includes('Google')){
+        speech.text='opening google for you'
+         window.open('https://www.google.com/')
+     }
+
+     if(text.includes('Unity')&& ('download')){
+        speech.text='opening the link to download unity for you'
+         window.open('https://unity3d.com/get-unity/download')
+     }
+     if(text.includes('Yahoo')){
+         speech.text='opening yahoo for you'
+         window.open('https://www.yahoo.com/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuYmluZy5jb20v&guce_referrer_sig=AQAAAGqbcm21KIFFmyPZWHHUWJKV2RH3WPEhk-oRG_wx62UH17AI4fh55K5szrwcxAQJHt100XKsaNod62nO52Eb72RNk6gMSHubfCUl_-6vnlwgqhXpnhRxlTSmwtmLRBlMgirIh_RmR5vzDiuTqsImVKP0aSFmWfbj-jG51w2VgAS6')
+     }
+     if(text.includes('Dropbox')){
+        speech.text='opening dropbox for you for you'
+         window.open(' https://www.dropbox.com/?_hp=c&landing=dbv2')
+     }
+
+     if(text.includes('Punjabi')&& ('songs')){
+        speech.text='opening the best punjabi songs'
+         window.open(' https://www.youtube.com/results?search_query=karan+aujla+songs')
+     }
+
+     if(text.includes('coding')&& ('learn')){
+        speech.text='opening the best link to learn coding'
+         window.open(' https://code.byjusfutureschool.com')
+     }
+    
     
 
-
+    
  
     
     window.speechSynthesis.speak(speech)
