@@ -29,9 +29,12 @@ function read(text){
     }
 
     // greetings
-    if(text.includes(' how are you')|| text.includes(' how is it been')){
+    if(text.includes('how are you')|| text.includes('how is it been')){
        speech.text = 'I am good, how are you. Welcome to you own personal assistant'
     }
+    if(text.includes('Hello')|| text.includes('hello')){
+        speech.text = 'Welcome to your own personal assistant, where you can talk to me as your own worker. You can start by saying How are you or maybe what is the date'
+     }
 
     if(text.includes('what is your name')){
         speech.text= 'you can call me by any name' 
@@ -62,7 +65,7 @@ function read(text){
         speech.text= 'The best games are fortnite, minecraft, call of duty but my personal favorite is fifa' 
     }
 
-    if(text.includes('Unity')){
+    if(text.includes('unity')||text.includes('Unity')){
         speech.text= 'You can get started by using their already made game such as the car game or the fps game to get started with unity. Or you can watch some tutorial on youtube' 
     }
     
@@ -102,6 +105,27 @@ function read(text){
     if(text.includes('most richest person in the world')){
         speech.text= 'The most richest person in the world is Jeff Bezos! He is the CEO of Amazon! ' 
     }
+
+    if(text.includes('most expensive trophy')){
+        speech.text= 'The most expensive trophy is the fifa world cup trophy. It  is so special that no one can touch it besides the winners. The cost of the trophy is 20 million you s dollars ' 
+    }
+
+    if(text.includes('online shopping')){
+        speech.text= 'The best places for online shopping are, amazon, ebay, alibaba, aliexpress, etsy, poshmark, and some brand stores such as gucci, l v, and versacci ' 
+    }
+
+    if(text.includes('vacation') ){
+        speech.text= 'The best places to go on a vacation is Diseny World, Singapores sentosa, universal studio or some beaches in miami, hawaii, or virginia ' 
+    }
+
+    if(text.includes('how to make a robot') ){
+        speech.text= 'You can get started by buying an arduino uno kit and try to play with it. Go see some tutorials of programming arduino uno. Thats the way to get started ' 
+    }
+
+    if(text.includes('robot dog')|| text.includes('robot dogs') ){
+        speech.text= 'The best robot dog is sony aibo. Yes it is a little bit expensive but it is very cool. If you want something cool but in your price rate, you can buy the robot jennie dog. It costs 449 dollars. Jennie robot dog does everthing besides walking. Its also a lebrador puppy style dog. Its cool right!' 
+    }
+    
 
 
  
